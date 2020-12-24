@@ -2,7 +2,7 @@
 
 def cfg_parser():
     import json
-    with open('deepblue_selector.cfg') as f:
+    with open('selector.cfg') as f:
         config_text = f.read().decode('utf-8-sig').replace('\\', '\\\\')
         config_dict = json.loads(config_text)
     return config_dict
